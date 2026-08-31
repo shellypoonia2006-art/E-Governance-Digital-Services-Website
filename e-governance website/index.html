@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NagrikSetu - a calm, accessible prototype for discovering and tracking government services.">
+  <title>NagrikSetu | Digital services for every citizen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Government of India · Citizen services</span>
+        <div class="utility-links">
+          <button class="text-button" id="font-toggle" type="button" aria-label="Increase text size">A<sup>+</sup> Text size</button>
+          <button class="text-button" id="contrast-toggle" type="button">◐ High contrast</button>
+          <a href="#help">Help &amp; support</a>
+        </div>
+      </div>
+    </div>
+    <div class="container nav-row">
+      <a class="brand" href="#" aria-label="NagrikSetu home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span><strong>NagrikSetu</strong><small>सर्वजन सेवा · Services for all</small></span>
+      </a>
+      <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" aria-label="Primary navigation">
+        <a class="active" href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#status">Track application</a>
+        <a href="#help">Help centre</a>
+        <button class="button button-small" id="login-button" type="button">Sign in</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR DIGITAL GOVERNMENT COMPANION</p>
+          <h1>Services that move at the <em>speed of life.</em></h1>
+          <p class="hero-lede">Find trusted government services, understand what you need, and apply with confidence — all in one simple place.</p>
+          <div class="search-shell">
+            <label for="service-search">What service are you looking for?</label>
+            <div class="search-control">
+              <span aria-hidden="true">⌕</span>
+              <input id="service-search" type="search" placeholder="Try “driving licence” or “pension”">
+              <button class="button" id="search-button" type="button">Search</button>
+            </div>
+            <p class="search-hint">Popular: <button class="link-button popular-search" type="button">Income certificate</button> · <button class="link-button popular-search" type="button">Birth certificate</button> · <button class="link-button popular-search" type="button">Pension</button></p>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a citizen accessing digital services" role="img">
+          <div class="sun"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="phone"><div class="phone-notch"></div><span class="phone-star">✦</span><div class="phone-line"></div><div class="phone-card"></div><div class="phone-line short"></div></div>
+          <div class="person person-one"><span class="head"></span><span class="body"></span></div>
+          <div class="person person-two"><span class="head"></span><span class="body"></span></div>
+          <span class="art-spark spark-one">✦</span><span class="art-spark spark-two">+</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-strip" aria-label="Quick information">
+      <div class="container quick-grid">
+        <div><span class="quick-icon">⌁</span><span><strong>Everything in one place</strong><small>2,400+ services across India</small></span></div>
+        <div><span class="quick-icon">✓</span><span><strong>Always know what’s next</strong><small>Real-time application tracking</small></span></div>
+        <div><span class="quick-icon">◉</span><span><strong>Help when you need it</strong><small>Support in 12 Indian languages</small></span></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">EXPLORE SERVICES</p><h2>What can we help you with?</h2></div><a class="arrow-link" href="#services">View all services <span aria-hidden="true">→</span></a></div>
+        <div class="service-grid" id="service-grid">
+          <button class="service-card selected" data-category="identity"><span class="service-icon violet">▣</span><span><strong>Identity &amp; documents</strong><small>Certificates, ID cards, records</small></span><span class="card-arrow">↗</span></button>
+          <button class="service-card" data-category="transport"><span class="service-icon coral">⌁</span><span><strong>Transport &amp; travel</strong><small>Licences, permits, passes</small></span><span class="card-arrow">↗</span></button>
+          <button class="service-card" data-category="money"><span class="service-icon mint">◒</span><span><strong>Money &amp; benefits</strong><small>Pensions, subsidies, taxes</small></span><span class="card-arrow">↗</span></button>
+          <button class="service-card" data-category="home"><span class="service-icon gold">⌂</span><span><strong>Home &amp; utilities</strong><small>Housing, water, electricity</small></span><span class="card-arrow">↗</span></button>
+        </div>
+        <div class="featured-panel">
+          <div><p class="eyebrow">POPULAR RIGHT NOW</p><h3>Start with a service</h3><p>Clear steps, no confusing jargon. You can save your progress and return anytime.</p><button class="button" id="start-button" type="button">Browse all services <span aria-hidden="true">→</span></button></div>
+          <div class="mini-list" aria-label="Popular services"><button type="button" class="mini-item"><span>▧</span>Apply for income certificate <b>→</b></button><button type="button" class="mini-item"><span>◌</span>Renew driving licence <b>→</b></button><button type="button" class="mini-item"><span>♧</span>Check pension status <b>→</b></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section" id="process">
+      <div class="container process-grid"><div><p class="eyebrow">A LITTLE MORE HUMAN</p><h2>Government services,<br><em>made understandable.</em></h2></div><div class="steps"><div class="step"><span>01</span><div><strong>Find your service</strong><p>Search in plain language or browse by life event.</p></div></div><div class="step"><span>02</span><div><strong>Know before you apply</strong><p>See documents, fees, eligibility and expected time.</p></div></div><div class="step"><span>03</span><div><strong>Apply &amp; track</strong><p>Save a draft, submit securely and follow progress.</p></div></div></div></div>
+    </section>
+
+    <section class="status-section" id="status">
+      <div class="container status-card"><div><p class="eyebrow">ALREADY APPLIED?</p><h2>Keep an eye on your application.</h2><p>Enter your reference number to see the latest update.</p></div><form id="status-form"><label for="reference-number">Application reference number</label><div class="status-input"><input id="reference-number" required placeholder="e.g. NS-2024-01842"><button class="button" type="submit">Check status</button></div><p class="form-message" id="status-message" role="status"></p></form></div>
+    </section>
+  </main>
+
+  <footer id="help"><div class="container footer-grid"><div><a class="brand footer-brand" href="#"><span class="brand-mark">✦</span><span><strong>NagrikSetu</strong><small>सर्वजन सेवा · Services for all</small></span></a><p>A prototype for simpler, more inclusive public services.</p></div><div><strong>Need help?</strong><a href="tel:1800111111">1800-11-1111</a><a href="mailto:help@nagriksetu.gov.in">help@nagriksetu.gov.in</a></div><div><strong>On this page</strong><a href="#services">Services</a><a href="#process">How it works</a><a href="#status">Track application</a></div></div><div class="container footer-bottom"><span>© 2024 NagrikSetu prototype</span><span>Built for access · privacy · dignity</span></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
